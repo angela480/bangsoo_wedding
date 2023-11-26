@@ -1,0 +1,74 @@
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard-dynamic-subset.css');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'pretendard';
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    line-height: normal;
+    letter-spacing: normal;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+:root {
+    /* basic color */
+    --white-color: #fdfbf9;
+    --brown1-color: #856141;
+    --brown2-color: #615555;
+    --brown3-color: #4c423c;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #eee9e0;
+}
+
+.section, footer {
+    padding: 80px 24px;
+}
+
+.img {
+    background: url('images/main.JPG') center/cover no-repeat;
+    height: 700px;
+}
+
+.sub_title {
+    color: var(--brown1-color);
+    margin-bottom: 12px;
+}
+
+.title {
+    color: var(--brown2-color);
+    margin-bottom: 24px;
+}
+
+.content {
+    color: var(--brown3-color);
+    line-height: 160%;
+}
+
+
+/* 첫 페이지 */
+#intro {
+    padding: 0px;
+}
+
+/* 초대글/두번째 페이지 */
+#text, #location {
+    background-color: var(--white-color);
+}
+
+/* 달력 */
+#calendar {
+    background-color: var(--brown3-color);
+}
+
+#date {
+    color: var(--white-color);
+}
