@@ -8,10 +8,12 @@
 
 <!-- 파비콘 -->
 <link rel="icon" type="image/png" href="images/favicon.png">
+
 <!-- css -->
 <link rel="stylesheet" href="common.css">
-<!-- <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard-dynamic-subset.css" /> -->
- <!-- javascript -->
+<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/earlyaccess/jejumyeongjo.css"/>
+
+<!-- javascript -->
  <script src="main.js" defer></script>
 </head>
 <body>
@@ -19,36 +21,67 @@
         <main>
             <!-- 메인 첫장 -->
             <section id="intro" class="section">
-                <img class="img" src="images/main.jpg">
+                <img class="img" src="images/main2.jpeg">
             </section>
             <!-- 초대글 -->
             <section id="text" class="section">
                 <p class="sub_title">Invitation</p>
                 <h1 class="title">초대합니다</h1>
                 <p class="content">
-                    닮은 미소와 생각을 가진 두 사람이 <br>
-                    소중한 만남으로 시작하여 <br>
-                    축복 속에서 앞으로의 길을 걷고자 합니다 <br>
-                    많은 사랑과 기도 부탁드려요오 후후 <br>
-                    히히히히히히히히 <br>
-                    많은 사랑과 기도 부탁드려요오 후후 <br>
-                    많은 사랑과 기도 부탁드려요오 후후 <br>
+                    추진력이 있는 병훈이는 희수를 이끌어주고,<br>
+                    꼼꼼한 희수는 병훈이를 채워줄 거예요.<br>
                 </p>
+                <p class="content">
+                    행복한 날들도, 그저 그런 날들도,<br>
+                    하나님 안에서 둘이서 야무지게 살아가 볼게요.<br>
+                </p>
+                <p class="content">
+                    많은 기도로 응원해주세요.<br>
+                </p>
+                <div class="name">
+                    <div>
+                        <p class="caption">김영진, 어머니의 아들</p>
+                        <p class="content">김병훈</p>
+                    </div>
+                    <div>
+                        <p class="caption">윤영수, 박성희의 딸</p>
+                        <p class="content">윤희수</p>
+                    </div>
+                </div>
             </section>
              <!-- 달력 -->
              <section id="calendar" class="section">
-                <h1 id="date" class="title">2024. 04. 27(토) 오후 6시</h1>
-                <!-- <h1 id="date" class="title">오후 6시</h1> -->
+                <h1 id="date" class="title">2024. 04. 27</h1><br>
+                <p id="date">토요일 오후 6시</p>
+                <img class="img" src="images/date.png">
             </section>
              <!-- 위치 -->
              <section id="location" class="section">
                 <p class="sub_title">Location</p>
                 <h1 class="title">찾아오시는 길</h1>
+                <div class="map" id="map">
+                    <!-- 1. 약도 노드 -->
+                    <div id="daumRoughmapContainer1703491493579" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+
+                    <!-- 2. 설치 스크립트 -->
+                    <script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+
+                    <!-- 3. 실행 스크립트 -->
+                    <script charset="UTF-8">
+                        new daum.roughmap.Lander({
+                            "timestamp" : "1703491493579",
+                            "key" : "2hcov",
+                            "mapWidth" : "360",
+                            "mapHeight" : "240"
+                        }).render();
+                    </script>
+                </div>
             </section>
              <!-- 갤러리 -->
              <section id="gallery" class="section">
                 <p class="sub_title">Gallery</p>
                 <h1 class="title">우리의 순간</h1>
+                
             </section>
              <!-- 계좌번호 -->
              <section id="account" class="section">

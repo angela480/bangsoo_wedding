@@ -1,9 +1,10 @@
-@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard-dynamic-subset.css');
+@import url(//fonts.googleapis.com/earlyaccess/jejumyeongjo.css);
+
 
 * {
     margin: 0px;
     padding: 0px;
-    font-family: 'pretendard';
+    font-family: 'Jeju Myeongjo';
     list-style: none;
     text-decoration: none;
     box-sizing: border-box;
@@ -30,18 +31,28 @@ html, body {
 }
 
 .section, footer {
-    padding: 80px 24px;
+    padding: 80px 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .img {
     background: url('images/main.JPG') center/cover no-repeat;
-    height: 700px;
+    height: 500px;
 }
 
 .sub_title {
     color: var(--brown1-color);
     margin-bottom: 12px;
 }
+
+.caption {
+    color: var(--brown1-color);
+    margin: 32px 0px 8px 0px;
+}
+
 
 .title {
     color: var(--brown2-color);
@@ -51,12 +62,23 @@ html, body {
 .content {
     color: var(--brown3-color);
     line-height: 160%;
+    margin-bottom: 24px;
 }
 
+.name {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+.name .content {
+    font-size: 24px;
+}
 
 /* 첫 페이지 */
 #intro {
-    padding: 0px;
+    background-color: var(--white-color);
+    padding: 20px 0 0 0;
 }
 
 /* 초대글/두번째 페이지 */
@@ -71,4 +93,9 @@ html, body {
 
 #date {
     color: var(--white-color);
+    margin: 0;
+}
+
+#calendar .img {
+    height: 400px;
 }
