@@ -40,12 +40,12 @@ html, body {
 
 .img {
     background: url('images/main.JPG') center/cover no-repeat;
-    height: 500px;
+    height: 600px;
 }
 
 .sub_title {
     color: var(--brown1-color);
-    margin-bottom: 12px;
+    margin-bottom: 16px;
 }
 
 .caption {
@@ -78,11 +78,11 @@ html, body {
 /* 첫 페이지 */
 #intro {
     background-color: var(--white-color);
-    padding: 20px 0 0 0;
+    padding: 8px 0 0 0;
 }
 
 /* 초대글/두번째 페이지 */
-#text, #location {
+#text, #location, #gallery,#account {
     background-color: var(--white-color);
 }
 
@@ -99,3 +99,107 @@ html, body {
 #calendar .img {
     height: 400px;
 }
+
+.account_img {
+    height: 250px;
+}
+
+#notice {
+    background-color: var(--brown3-color);
+}
+
+#notice .sub_title {
+    color: #E8E8E8;
+}
+
+#notice .title {
+    color: var(--white-color);
+}
+
+#notice img {
+    width: 340px;
+    margin-top: 16px;
+}
+
+#gallery {
+    max-width: 450px;
+}
+
+.gallery_item {
+    width: 100%;
+    height: 100%;
+    /* width: 100px; */
+    /* height: 100px; */
+}
+
+#account {
+    padding: 400px 8px 80px 8px;
+}
+
+#thanks {
+    background-color: var(--brown3-color);
+    color: var(--white-color);
+    padding: 60px 8px;
+}
+
+input {
+    display: none;
+}
+
+label, .big-img {
+    font-size: 0;
+    padding: 4px;
+}
+
+.img-area {
+    width: 100%;
+    position: relative;
+    height: 600px;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-area .sub-img {
+    position: absolute;
+    top: 600px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.img-area .big-img img {
+    display: none;
+    
+}
+
+.sub-img label {
+    width: 100px;
+    height: 100px;
+}
+
+.sub-img {
+    display: flex;
+    flex-wrap: wrap;
+    width: 400px;
+}
+
+.big-img {
+    width: 400px;
+}
+
+input:checked ~ .big-img img{display: none;}
+input:nth-child(1):checked ~ .big-img img:nth-child(1){display: block;}
+input:nth-child(2):checked ~ .big-img img:nth-child(2){display: block;}
+input:nth-child(3):checked ~ .big-img img:nth-child(3){display: block;}
+input:nth-child(4):checked ~ .big-img img:nth-child(4){display: block;}
+input:nth-child(5):checked ~ .big-img img:nth-child(5){display: block;}
+input:nth-child(6):checked ~ .big-img img:nth-child(6){display: block;}
+input:nth-child(7):checked ~ .big-img img:nth-child(7){display: block;}
+input:nth-child(8):checked ~ .big-img img:nth-child(8){display: block;}
+input:nth-child(9):checked ~ .big-img img:nth-child(9){display: block;}
+input:nth-child(10):checked ~ .big-img img:nth-child(10){display: block;}
+input:nth-child(11):checked ~ .big-img img:nth-child(11){display: block;}
+input:nth-child(12):checked ~ .big-img img:nth-child(12){display: block;}
