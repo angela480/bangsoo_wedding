@@ -23,7 +23,7 @@
     --brown3-color: #4c423c;
 }
 
-html, body {
+body {
     width: 100%;
     height: 100%;
     display: flex;
@@ -40,8 +40,9 @@ html, body {
 }
 
 .img {
-    background: url('images/main.JPG') center/cover no-repeat;
-    height: 600px;
+    background: url('images/home.jpg') center/cover no-repeat;
+    /* height: 600px; */
+    width: 360px;
 }
 
 .sub_title {
@@ -98,7 +99,7 @@ html, body {
 }
 
 #calendar .img {
-    height: 400px;
+    /* height: 400px; */
 }
 
 .account_img {
@@ -129,12 +130,13 @@ html, body {
 .gallery_item {
     width: 100%;
     height: 100%;
+    object-fit: cover;
     /* width: 100px; */
     /* height: 100px; */
 }
 
 #account {
-    padding: 400px 8px 80px 8px;
+    padding: 360px 8px 80px 8px;
 }
 
 .account_wrap {
@@ -175,9 +177,10 @@ label, .big-img {
 }
 
 .img-area {
-    width: 100%;
+    /* width: 100%; */
+    width: 320px;
     position: relative;
-    height: 600px;
+    /* height: 600px; */
     padding: 0;
     margin: 0;
     display: flex;
@@ -187,7 +190,7 @@ label, .big-img {
 
 .img-area .sub-img {
     position: absolute;
-    top: 600px;
+    top: 480px;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
@@ -198,18 +201,18 @@ label, .big-img {
 }
 
 .sub-img label {
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
 }
 
 .sub-img {
     display: flex;
     flex-wrap: wrap;
-    width: 400px;
+    width: 320px;
 }
 
 .big-img {
-    width: 400px;
+    width: 320px;
 }
 
 input:checked ~ .big-img img{display: none;}
@@ -229,3 +232,17 @@ input:nth-child(13):checked ~ .big-img img:nth-child(13){display: block;}
 input:nth-child(14):checked ~ .big-img img:nth-child(14){display: block;}
 input:nth-child(15):checked ~ .big-img img:nth-child(15){display: block;}
 input:nth-child(16):checked ~ .big-img img:nth-child(16){display: block;}
+
+@media screen and (max-width: 400px) {
+    #calendar .img {
+        /* height: 300px; */
+    }
+
+    #notice img {
+        width: 300px;
+    }
+
+    .name .content {
+        font-size: 20px;
+    }
+}
