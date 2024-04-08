@@ -1,11 +1,23 @@
-@import url(//fonts.googleapis.com/earlyaccess/jejumyeongjo.css);
+@import url(//fonts.googleapi.com/earlyaccess/jejumyeongjo.css);
+@font-face {
+    font-family: 'SOGANGUNIVERSITYTTF';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2312-1@1.1/SOGANGUNIVERSITYTTF.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'YESMyoungjo-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_13@1.0/YESMyoungjo-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 @import url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff');
 
 
 * {
     margin: 0px;
     padding: 0px;
-    font-family: 'Jeju Myeongjo', 'prtendard';
+    font-family: 'SOGANGUNIVERSITYTTF', 'YESMyoungjo-Regular', 'prtendard';
     list-style: none;
     text-decoration: none;
     box-sizing: border-box;
@@ -18,9 +30,9 @@
 :root {
     /* basic color */
     --white-color: #fdfbf9;
-    --brown1-color: #856141;
-    --brown2-color: #615555;
-    --brown3-color: #4c423c;
+    --brown1-color: #6A6B4E;
+    --brown2-color: #283C00;
+    --brown3-color: #162100;
 }
 
 body {
@@ -28,7 +40,7 @@ body {
     height: 100%;
     display: flex;
     justify-content: center;
-    background-color: #eee9e0;
+    background-color: #F6F6E5;
 }
 
 .section, footer {
@@ -58,13 +70,16 @@ body {
 
 .title {
     color: var(--brown2-color);
-    margin-bottom: 24px;
+    margin-bottom: 36px;
+    font-size: 20px;
+    font-weight:bold;
 }
 
 .content {
     color: var(--brown3-color);
     line-height: 160%;
     margin-bottom: 24px;
+    font-family: 'YESMyoungjo-Regular';
 }
 
 .name {
@@ -73,9 +88,12 @@ body {
     gap: 24px;
 }
 
-.name .content {
-    font-size: 24px;
+.name .img {
+    width: 300px;
+    margin-top: 20px;
 }
+
+
 
 /* 첫 페이지 */
 #intro {
@@ -91,6 +109,7 @@ body {
 /* 달력 */
 #calendar {
     background-color: var(--brown3-color);
+    /* padding: 80px 0; */
 }
 
 #date {
@@ -164,7 +183,11 @@ body {
 #thanks {
     background-color: var(--brown3-color);
     color: var(--white-color);
-    padding: 60px 8px;
+    padding: 40px 8px;
+}
+
+#thanks p {
+    line-height: 1.8;
 }
 
 input {
